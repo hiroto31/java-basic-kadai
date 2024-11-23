@@ -7,14 +7,13 @@ public class Car_Chapter15 {
 		private int gear = 1; // ギア
 		private int speed = 10; // 速度
 	
-		// メソッド
-		public void CarChaoter15(int gear, int speed) {
-			this.gear = gear;
-			this.speed = speed;
-		}
 		// ギアに応じた速度
 		public void gearChange(int afterGear) {
+			System.out.println("ギア" + this.gear + "から" + afterGear + "切り替えました");
+			
 			this.gear = afterGear;
+			
+			// ギア毎の速度を取得
 			this.speed = switch (this.gear) {
 				case 1 -> 10;
 				case 2 -> 20;
@@ -27,7 +26,6 @@ public class Car_Chapter15 {
 		
 		// runメソッド
 		public void run() {
-			System.out.println("ギア1から" + this.gear + "に切り替えられました");
 			System.out.println("速度は時速" + this.speed + "kmです");
 		}
 	}
