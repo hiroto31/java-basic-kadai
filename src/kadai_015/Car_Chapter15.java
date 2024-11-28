@@ -7,6 +7,7 @@ public class Car_Chapter15 {
 		private int gear = 1; // ギア
 		private int speed = 10; // 速度
 	
+		// gearChangeメソッド
 		// ギアに応じた速度
 		public void gearChange(int afterGear) {
 			System.out.println("ギア" + this.gear + "から" + afterGear + "切り替えました");
